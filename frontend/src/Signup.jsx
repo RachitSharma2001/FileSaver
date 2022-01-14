@@ -1,12 +1,9 @@
 import { React, useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import {withRouter} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { contains } from 'jquery';
 
 export default function SignUp(props) {
-    
     // React hook variables
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -91,6 +88,7 @@ export default function SignUp(props) {
         setPassword(event.target.value);
     }
 
+    
     return (
         <Form>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
